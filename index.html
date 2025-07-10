@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FurniCraft - About Us</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#2F3C4F',
+                        'secondary': '#A9B7C0',
+                        'accent': '#D0D6E0',
+                        'supporting-1': '#6B7A8F',
+                        'supporting-2': '#8E9CA7'
+                    },
+                    fontFamily: {
+                        'serif': ['Playfair Display', 'serif'],
+                        'sans': ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans bg-white text-primary">
+    <!-- Header -->
+    <header id="header" class="fixed top-0 w-full z-50 transition-all duration-300">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-serif font-bold text-white">
+                    FurniCraft
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-white hover:text-accent transition-colors duration-300 font-medium border-b-2 border-white">About</a>
+                    <a href="video.html" class="text-white hover:text-accent transition-colors duration-300 font-medium">Video</a>
+                    <a href="catalog.html" class="text-white hover:text-accent transition-colors duration-300 font-medium">Catalog</a>
+                    <a href="#contact" class="text-white hover:text-accent transition-colors duration-300 font-medium">Contact</a>
+                </div>
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-white focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+                <a href="index.html" class="block py-2 text-white font-medium border-l-4 border-white pl-4">About</a>
+                <a href="video.html" class="block py-2 text-white hover:text-accent transition-colors duration-300">Video</a>
+                <a href="catalog.html" class="block py-2 text-white hover:text-accent transition-colors duration-300">Catalog</a>
+                <a href="#contact" class="block py-2 text-white hover:text-accent transition-colors duration-300">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen bg-cover bg-center bg-no-repeat" style="background-image: linear-gradient(rgba(47, 60, 79, 0.7), rgba(47, 60, 79, 0.7)), url('assets/images/hero-about.jpg');">
+        <div class="absolute inset-0 flex items-center justify-center">
+            <div class="text-center text-white px-6">
+                <h1 class="text-5xl md:text-7xl font-serif font-bold mb-6 leading-tight">
+                    Tentang FurniCraft
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed opacity-90">
+                    Menciptakan furniture modern dan futuristik untuk masa depan yang lebih baik
+                </p>
+                <a href="catalog.html" class="inline-block bg-white text-primary px-8 py-4 rounded-lg font-semibold hover:bg-accent transition-colors duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                    Lihat Koleksi
+                </a>
+            </div>
+        </div>
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Company Info Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <!-- Sejarah Singkat -->
+                <div class="space-y-6">
+                    <h2 class="text-4xl md:text-5xl font-serif font-bold text-primary">
+                        Sejarah Singkat
+                    </h2>
+                    <div class="space-y-4 text-supporting-1 leading-relaxed text-lg">
+                        <p>
+                            FurniCraft didirikan pada tahun 2015 dengan visi menciptakan furniture yang menggabungkan estetika modern dengan teknologi futuristik. Kami memulai perjalanan dari sebuah workshop kecil di Jakarta dengan tim yang terdiri dari 5 orang desainer dan pengrajin berpengalaman.
+                        </p>
+                        <p>
+                            Dalam kurun waktu 10 tahun, FurniCraft telah berkembang menjadi salah satu perusahaan furniture terdepan di Indonesia. Kami telah melayani lebih dari 1000 klien dan menciptakan lebih dari 500 desain furniture unik yang menggabungkan kenyamanan, fungsionalitas, dan estetika futuristik.
+                        </p>
+                        <p>
+                            Komitmen kami terhadap inovasi dan kualitas telah membawa FurniCraft meraih berbagai penghargaan dalam industri furniture dan desain interior di tingkat nasional maupun internasional.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Visi & Misi -->
+                <div class="space-y-6">
+                    <h2 class="text-4xl md:text-5xl font-serif font-bold text-primary">
+                        Visi & Misi
+                    </h2>
+                    <div class="space-y-8">
+                        <div class="bg-accent rounded-lg p-6">
+                            <h3 class="text-2xl font-serif font-semibold text-primary mb-4">Visi</h3>
+                            <p class="text-supporting-1 leading-relaxed text-lg">
+                                Menjadi perusahaan furniture terdepan yang menciptakan solusi hunian masa depan melalui desain inovatif, teknologi canggih, dan komitmen terhadap keberlanjutan lingkungan.
+                            </p>
+                        </div>
+                        <div class="bg-secondary rounded-lg p-6">
+                            <h3 class="text-2xl font-serif font-semibold text-primary mb-4">Misi</h3>
+                            <ul class="text-supporting-1 leading-relaxed space-y-3 text-lg">
+                                <li class="flex items-start">
+                                    <span class="text-primary mr-3">•</span>
+                                    Menghadirkan furniture berkualitas tinggi dengan desain modern dan futuristik
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-primary mr-3">•</span>
+                                    Menggunakan material ramah lingkungan dan teknologi produksi berkelanjutan
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-primary mr-3">•</span>
+                                    Memberikan pelayanan terbaik kepada setiap klien dengan pendekatan personal
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-primary mr-3">•</span>
+                                    Terus berinovasi dalam menciptakan solusi furniture yang fungsional dan estetis
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Production Process Section -->
+    <section class="py-20 relative bg-cover bg-center bg-no-repeat" style="background-image: linear-gradient(rgba(47, 60, 79, 0.8), rgba(47, 60, 79, 0.8)), url('assets/images/production-bg.jpg');">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-serif font-bold text-white mb-6">
+                    Proses Produksi Kami
+                </h2>
+                <p class="text-xl text-accent max-w-2xl mx-auto">
+                    Setiap produk FurniCraft melalui proses yang teliti dan berkualitas tinggi
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Step 1 -->
+                <div class="text-center group">
+                    <div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-lg p-8 hover:bg-opacity-20 transition-all duration-300 transform hover:-translate-y-2">
+                        <div class="bg-white rounded-full w-20 h-20 mx-auto mb-6 flex items-center justify-center shadow-lg">
+                            <svg class="w-10 h-10 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-serif font-semibold text-white mb-3">Desain</h3>
+                        <p class="text-accent">Konsep dan desain awal dibuat oleh tim kreatif berpengalaman</p>
+                    </div>
+                </div>
+                
+                <!-- Step 2 -->
+                <div class="text-center group">
+                    <div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-lg p-8 hover:bg-opacity-20 transition-all duration-300 transform hover:-translate-y-2">
+                        <div class="bg-white rounded-full w-20 h-20 mx-auto mb-6 flex items-center justify-center shadow-lg">
+                            <svg class="w-10 h-10 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-serif font-semibold text-white mb-3">Produksi</h3>
+                        <p class="text-accent">Proses manufaktur menggunakan teknologi modern dan presisi tinggi</p>
+                    </div>
+                </div>
+                
+                <!-- Step 3 -->
+                <div class="text-center group">
+                    <div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-lg p-8 hover:bg-opacity-20 transition-all duration-300 transform hover:-translate-y-2">
+                        <div class="bg-white rounded-full w-20 h-20 mx-auto mb-6 flex items-center justify-center shadow-lg">
+                            <svg class="w-10 h-10 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-serif font-semibold text-white mb-3">Quality Control</h3>
+                        <p class="text-accent">Kontrol kualitas ketat untuk memastikan standar terbaik</p>
+                    </div>
+                </div>
+                
+                <!-- Step 4 -->
+                <div class="text-center group">
+                    <div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-lg p-8 hover:bg-opacity-20 transition-all duration-300 transform hover:-translate-y-2">
+                        <div class="bg-white rounded-full w-20 h-20 mx-auto mb-6 flex items-center justify-center shadow-lg">
+                            <svg class="w-10 h-10 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-serif font-semibold text-white mb-3">Finishing</h3>
+                        <p class="text-accent">Sentuhan akhir dan detail untuk hasil yang sempurna</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="py-20 bg-gradient-to-br from-primary to-supporting-1">
+        <div class="container mx-auto px-6">
+            <div class="text-center text-white">
+                <h2 class="text-4xl md:text-5xl font-serif font-bold mb-6">
+                    Siap untuk Furniture Impian Anda?
+                </h2>
+                <p class="text-xl mb-8 max-w-2xl mx-auto opacity-90">
+                    Mari wujudkan hunian masa depan dengan furniture berkualitas tinggi dari FurniCraft
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#contact" class="inline-block bg-white text-primary px-8 py-4 rounded-lg font-semibold hover:bg-accent transition-colors duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                        Hubungi Kami
+                    </a>
+                    <a href="catalog.html" class="inline-block border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-primary transition-colors duration-300 transform hover:-translate-y-1">
+                        Lihat Katalog
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-primary text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-2xl font-serif font-bold mb-4">FurniCraft</h3>
+                    <p class="text-secondary leading-relaxed">
+                        Menciptakan furniture modern dan futuristik untuk masa depan yang lebih baik.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Kontak</h4>
+                    <div class="space-y-2 text-secondary">
+                        <p>📧 info@furnicraft.com</p>
+                        <p>📞 +62 21 1234 5678</p>
+                        <p>📍 Jakarta, Indonesia</p>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Ikuti Kami</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-secondary hover:text-white transition-colors duration-300">Instagram</a>
+                        <a href="#" class="text-secondary hover:text-white transition-colors duration-300">Facebook</a>
+                        <a href="#" class="text-secondary hover:text-white transition-colors duration-300">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-supporting-1 mt-8 pt-8 text-center text-secondary">
+                <p>&copy; 2025 FurniCraft. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Header background change on scroll
+        const header = document.getElementById('header');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                header.classList.add('bg-primary', 'shadow-lg');
+                header.classList.remove('bg-transparent');
+            } else {
+                header.classList.remove('bg-primary', 'shadow-lg');
+                header.classList.add('bg-transparent');
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
